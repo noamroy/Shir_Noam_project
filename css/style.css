@@ -1,3 +1,4 @@
+/*~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~*/
 * {
     margin: 0;
     padding: 0;  
@@ -8,13 +9,108 @@ header, main, aside, footer, nav{
     font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper_block{
-    width: 500px;
+    width: 360px;
     margin: 0px auto;
     display: block;
 }
-form{
-    background-color: orange;
+.debugger{
+    background-color: purple;
 }
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.smallPic{
+    height: 25px;
+    left: 25px;
+    background-color: lightgrey;
+}
+/*~~~~~~~~~~~ GENERAL HEADER ~~~~~~~~~~~~*/
+header {
+    background-color:orange;
+    height: 75px;
+    width: 360px;
+}
+#hum{
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;    
+}
+header>h1{
+    position: absolute;
+    margin-left: 55px;
+    color: white;
+    padding-top: 10px;
+    height: 25px;
+    font-family: 'Suez One';
+    font-size: 15px;
+}
+#logo{
+    width: 131px;
+}
+#home{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+/*~~~~~~~~~~~ General Main ~~~~~~~~~~~~*/
+main{
+    background-color: lightgrey;
+    width: 360px;
+    height: 565px;
+}
+main>h1{
+    padding-top: 20px;
+    text-align: center;
+    width: 360px;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+/*~~~~~~~~~~~ Home Page ~~~~~~~~~~~~*/
+.home_page_container{
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.home_page_container>a>section{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    background-color: orange;
+    border-radius: 3px;
+    justify-items: center;
+    align-items: center;
+}
+.home_page_container>a>section>h2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/*~~~~~~~~~~~ Manage Protests ~~~~~~~~~*/
+#add_icon{
+    background-color: orange;
+    border-radius: 100%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 10px;
+}
+
+/*~~~~~~~~~~~ Protest Page ~~~~~~~~~*/
+
+/*~~~~~~~~~~~ Create Event ~~~~~~~~~*/
 label{
     margin-left: 15px;
     margin-right: 15px;
@@ -42,5 +138,69 @@ label.form-check-label{
     left: 150px;
     margin-bottom: 15px;
     background-color: red;
+}
+/*~~~~~~~~~~~ Search Protest ~~~~~~~~~*/
+#page1 main>section{
+    width: 360px;
+    height: 75px;
+}
+section>img{
+    width: 30px;
+    margin-top: 10px;
+    align-items: center;
+    margin-right:  87px;;
+    position: relative;
+}
+#page1 main>section>span{
+    color: black;
+    font-family: 'Scada';
+    font-weight: bold;
+    height: 33px;
+    position: relative;
+    margin-left: 100px;
+    font-size: 24px;
+}
+h3{
+    color: white;
+    position:absolute;
+    font-size: 14px;
+    margin-right: 190px;
+    font-weight: normal;
+}
+.table{
+    width: 345px;
+    height: 392px;
+    margin-left: 8px;
+}
+
+thead>tr{
+    height: 30px;
+    width: 342.86px;
+    background-color: #CCCCCC;
+}
+thead>tr>th{
+    background-color: #CCCCCC;
+}
+tbody>tr>td{
+    align-items: center;
+    margin-right: 10px;
+}
+tbody{
+    align-items: center;
+    margin-left: 20px;
+}
+
+#page2 main>section>span{
+    position: absolute;
+    width: 158px;
+    height: 31px;
+    right:96px;
+    top: 100px;
+    align-items: center;
+    font-family: 'Scada';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
     
 }
