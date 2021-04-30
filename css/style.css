@@ -13,6 +13,13 @@ header, main, aside, footer, nav{
     margin: 0px auto;
     display: block;
 }
+
+.warpper{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
 .debugger{
     background-color: purple;
 }
@@ -29,6 +36,12 @@ a{
     left: 25px;
     background-color: lightgrey;
 }
+
+footer{
+    width: 360px;
+    height: 29px;
+    color: white;
+}
 /*~~~~~~~~~~~ GENERAL HEADER ~~~~~~~~~~~~*/
 header {
     background-color:orange;
@@ -40,13 +53,13 @@ header {
     height: 25px;
     margin-left: 25px;    
 }
-header>h1{
+header>h4 {
     position: absolute;
     margin-left: 55px;
     color: white;
     padding-top: 10px;
     height: 25px;
-    font-family: 'Suez One';
+    font-weight: normal;
     font-size: 15px;
 }
 #logo{
@@ -72,29 +85,44 @@ main>h1{
 
 }
 /*~~~~~~~~~~~ Home Page ~~~~~~~~~~~~*/
-.home_page_container{
+#page2 h1{
+    padding-top: 20px;
+    text-align: center;
+    width: 360px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+
+.container{
     width: 300px;
-    height: 300px;
-    margin-left: 30px;
+    height: 305px;
+    left: 7px;
+    top: 153px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 29px;
+
 }
-.home_page_container>a>section{
-    display: flex;
+
+.container>section{
     width: 130px;
     height: 130px;
     background-color: orange;
     border-radius: 3px;
-    justify-items: center;
     align-items: center;
+    justify-items: center;
 }
-.home_page_container>a>section>h2{
+
+#page2 h2{
     color: white;
     font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin: 20px;
 }
 /*~~~~~~~~~~~ Manage Protests ~~~~~~~~~*/
 #add_icon{
