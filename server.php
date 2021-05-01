@@ -7,7 +7,7 @@
             <section>
                 <h1>the next lines return from the server:</h1>
                 <?php
-                    "<h2>PHP is Fun!</h2>";
+                    echo "<h1 style='font-size: xx-large; color:orange;'>iProtest is the best App ever</h1>";
                 ?>
             </section>
         </body>
