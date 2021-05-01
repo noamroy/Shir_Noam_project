@@ -6,17 +6,12 @@
 header, main, aside, footer, nav{
     display: block;
     margin: 0px auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.wrapper_block{
-    width: 360px;
-    margin: 0px auto;
-    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .warpper{
     margin: 0 auto;
-    width: 1000px;
+    width: 1000%;
 }
 
 
@@ -58,13 +53,17 @@ header>h4 {
     margin-left: 55px;
     color: white;
     padding-top: 10px;
-    height: 25px;
-    font-weight: normal;
     font-size: 15px;
 }
 #logo{
-    width: 131px;
+    background-image: url("../images/logo.png");
+    width: 133px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
 }
+
+
 #home{
     width: 25px;
     height: 25px;
@@ -88,7 +87,6 @@ main>h1{
 #page2 h1{
     padding-top: 20px;
     text-align: center;
-    width: 360px;
     font-size: 30px;
     padding-bottom: 20px;
     font-weight: normal;
@@ -98,8 +96,6 @@ main>h1{
 .container{
     width: 300px;
     height: 305px;
-    left: 7px;
-    top: 153px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -112,15 +108,12 @@ main>h1{
     height: 130px;
     background-color: orange;
     border-radius: 3px;
-    align-items: center;
-    justify-items: center;
 }
 
 #page2 h2{
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 20px;
 }
@@ -157,8 +150,8 @@ button{
 }
 
 .btn-join{
-    background-color: red;
-    border-color: red;
+    background-color:green;
+    border-color: green;
     color: white;
     border-radius: 3px;
     margin-top: 5px;
@@ -191,112 +184,105 @@ h6{
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 2.0;
+    margin-left: 6px;
 }
     
-
-.details>section>img{
-    margin-top: 0px;
-    left: 80px;
-    background-color:'none';
-}
-
 .details>section{
     display: flex;
+    margin-left: 80px;
+
 }
-/*~~~~~~~~~~~ Create Event ~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~ Create protest ~~~~~~~~~*/
 label{
     margin-left: 15px;
     margin-right: 15px;
-    
     display:block;
+    text-align: center;
 }
 label.form-check-label{
     display: inline-block;
     width: 80px;
 }
+
+.form-check{
+    margin-left: 80px;
+}
+
 .btn btn-primary{
     outline-style: none;
 }
-#green{
+#submitbtn{
     width: 100px;
     position: relative;
-    left: 100px;
-    margin-bottom: 15px;
+    left: 65px;
+    margin-top: 5px;
     background-color: green;
+    border-color: green;
     outline-width: 0px;
 }
-#red{
+
+#returnbtn{
     width: 100px;
     position: relative;
-    left: 150px;
-    margin-bottom: 15px;
+    left: 75px;
+    margin-top: 5px;
     background-color: red;
+    border-color: red;
 }
-/*~~~~~~~~~~~ protest Protest ~~~~~~~~~*/
-#page1 main>section{
-    width: 360px;
-    height: 75px;
-}
-section>img{
-    width: 30px;
-    margin-top: 10px;
-    align-items: center;
-    margin-right:  87px;;
-    position: relative;
-}
-/*#page1 main>section>span{
-    color: black;
-    font-family: 'Scada';
-    font-weight: bold;
-    height: 33px;
-    position: relative;
-    margin-left: 100px;
-    font-size: 24px;
-}*/
-h3{
-    color: white;
-    position:absolute;
-    font-size: 14px;
-    margin-right: 190px;
-    font-weight: normal;
-}
-.table{
-    width: 345px;
-    height: 392px;
-    margin-left: 8px;
+.form-check-label>img{
+    width: 20px;
+    margin-right:50px;
 }
 
-thead>tr{
-    height: 30px;
-    width: 342.86px;
-    background-color: #CCCCCC;
+/*****************maneger**************/
+#chart{
+    width: 340px;
+    height: 390px;
+    text-align: center;
+    margin-left: 10px;
 }
-thead>tr>th{
-    background-color: #CCCCCC;
-}
-tbody>tr>td{
-    align-items: center;
-    margin-right: 10px;
-}
-tbody{
-    align-items: center;
-    margin-left: 20px;
+table{
+    width: 340px;
 }
 
-#page2 main>section>span{
+
+/*************menu**********************/
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
     position: absolute;
-    width: 158px;
-    height: 31px;
-    right:96px;
-    top: 100px;
-    align-items: center;
-    font-family: 'Scada';
-    font-style: normal;
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    
-}
+    display: inline-block;
+    margin-left: 25px;
 
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 18px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
 
-/*************pt**********************/
+  
+
