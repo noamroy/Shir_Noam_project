@@ -86,6 +86,6 @@ function createManageTable(){
 
 function protestPage(){
   $( "tr" ).click(function() {
-    window.location = "protest_page.html"
+    window.location = "protest_page.html?protestId=1"
   });
 }
